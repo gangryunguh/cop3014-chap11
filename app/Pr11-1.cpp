@@ -19,31 +19,26 @@ int main()
 
    // Get the employee's number.
    cout << "Enter the employee's number: ";
-   cin >> employee.empNumber;
 
    // Get the employee's name.
    cout << "Enter the employee's name: ";
-   cin.ignore();	// To skip the remaining '\n' character
-   getline(cin, employee.name);
+    	// To skip the remaining '\n' character
 
    // Get the hours worked by the employee.
    cout << "How many hours did the employee work? ";
-   cin >> employee.hours;
+
 
    // Get the employee's hourly pay rate.
    cout << "What is the employee's hourly payRate? ";
-   cin >> employee.payRate;
 
    // Calculate the employee's gross pay.
-   employee.grossPay = employee.hours * employee.payRate;
 
    // Display the employee data.
-   cout << "Here is the employee's payroll data:\n";
-   cout << "name: " << employee.name << endl;
-   cout << "Number: " << employee.empNumber << endl;
-   cout << "hours worked: " << employee.hours << endl;
-   cout << "Hourly payRate: " << employee.payRate << endl;
    cout << fixed << showpoint << setprecision(2);
-   cout << "Gross Pay: $" << employee.grossPay << endl;
+   cout << "Here is the employee's payroll data:\n";
+
+   cout << "\n\nPrint using printPayrollRecord specialized routine for PayRoll ADT\n";
+   // Display the employee data using a specialzed ADT operator
+   
    return 0;
 }
