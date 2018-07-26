@@ -6,12 +6,24 @@ using namespace std;
 
 struct PayRoll
 {
-   int empNumber;    // Employee number
-   string name;		 // Employee's name
-   double hours;     // Hours worked
-   double payRate;   // Hourly payRate
-   double grossPay;  // Gross Pay
+    int empNumber;    // Employee number
+    string name;		 // Employee's name
+    double hours;     // Hours worked
+    double payRate;   // Hourly payRate
+    double grossPay;  // Gross Pay
+    void printRecord();
 };
+
+void PayRoll::printRecord() {
+   cout << "Here is the employee's payroll data:\n";
+   cout << "name: " << name << endl;
+   cout << "Number: " << empNumber << endl;
+   cout << "hours worked: " << hours << endl;
+   cout << "Hourly payRate: " << payRate << endl;
+   cout << fixed << showpoint << setprecision(2);
+   cout << "Gross Pay: $" << grossPay << endl;
+}
+
 
 int main()
 {
@@ -38,12 +50,15 @@ int main()
    employee.grossPay = employee.hours * employee.payRate;
 
    // Display the employee data.
+   cout << fixed << showpoint << setprecision(2);
    cout << "Here is the employee's payroll data:\n";
    cout << "name: " << employee.name << endl;
    cout << "Number: " << employee.empNumber << endl;
    cout << "hours worked: " << employee.hours << endl;
    cout << "Hourly payRate: " << employee.payRate << endl;
-   cout << fixed << showpoint << setprecision(2);
    cout << "Gross Pay: $" << employee.grossPay << endl;
+
+   cout << "\n Print using the printRecord operator on PayRoll ADT. \n";
+   employee.printRecord();
    return 0;
 }
