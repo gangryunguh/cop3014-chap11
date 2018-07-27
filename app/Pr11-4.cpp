@@ -19,17 +19,19 @@ int main()
    cout << "Enter the hours worked by " << NUM_WORKERS 
         << " employees and their hourly rates.\n";
 
+   PayInfo *pWorker = workers; // &(workers[0])
    for (index = 0; index < NUM_WORKERS; index++)
    {
       // Get the hours worked by an employee.
       cout << "Hours worked by employee #" << (index + 1);
       cout << ": ";
-      cin >> workers[index].hours;
-      
+      // write code that reads in work hours to array workers
+
       // Get the employee's hourly pay rate.
       cout << "Hourly pay rate for employee #";
       cout << (index + 1) << ": ";
-      cin >> workers[index].payRate;
+      // write code that reads in pay rate to array workers
+
       cout << endl;
    }
 

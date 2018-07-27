@@ -39,6 +39,6 @@ int main()
 
    cout << "\n\nPrint using printPayrollRecord specialized routine for PayRoll ADT\n";
    // Display the employee data using a specialzed ADT operator
-   
+
    return 0;
 }

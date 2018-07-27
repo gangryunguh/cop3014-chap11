@@ -16,8 +16,8 @@ struct EmployeePay
 
 int main()
 {
-   EmployeePay employee1 = {"Betty Ross", 141, 18.75};
-   EmployeePay employee2 = {"Jill Sandburg", 142, 17.50};
+   EmployeePay employee1 = {"Tom", 1000, 40, 40000};
+   EmployeePay employee2 = {"Jerry", 1001, 40, 50000};
 
    cout << fixed << showpoint << setprecision(2);
 
