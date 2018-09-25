@@ -12,28 +12,18 @@ struct PayInfo
 int main()
 {
    const int NUM_WORKERS = 3;    // Number of workers
-   PayInfo workers[NUM_WORKERS]; // Array of structures
+
+   // Create an array of 3 PayInfo and name it as "workers"
+
    int index;                    // Loop counter
 
    // Get employee pay data.
    cout << "Enter the hours worked by " << NUM_WORKERS 
         << " employees and their hourly rates.\n";
 
-   PayInfo *pWorker = workers; // &(workers[0])
-   for (index = 0; index < NUM_WORKERS; index++)
-   {
-      // Get the hours worked by an employee.
-      cout << "Hours worked by employee #" << (index + 1);
-      cout << ": ";
-      // write code that reads in work hours to array workers
-
-      // Get the employee's hourly pay rate.
-      cout << "Hourly pay rate for employee #";
-      cout << (index + 1) << ": ";
-      // write code that reads in pay rate to array workers
-
-      cout << endl;
-   }
+   // Create a for loop that initializes each worker object
+   // by iterating over "workers" array using a pointer
+   // arithmetic.
 
    // Display each employee's gross pay.
    cout << "Here is the gross pay for each employee:\n";

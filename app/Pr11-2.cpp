@@ -32,7 +32,8 @@ int main()
    // Display the circle data.
    cout << fixed << showpoint << setprecision(2);
    cout << "The radius and area of the circle are:\n";
-   cout << "Radius: " << c.radius << endl;
-   cout << "Area: " << c.area << endl;
+
+
+
    return 0;
 }

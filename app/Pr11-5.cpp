@@ -36,9 +36,13 @@ int main()
 
    // Get the manager's name and employee number
    cout << "Enter the manager's name: ";
-   getline(cin, manager.name);
+
+   // Using istream getline method to initialize manager name
+
    cout << "Enter the manager's employee number: ";
-   cin >> manager.employeeNumber;
+
+   // Initialize manager employee number
+
    
    // Get the manager's birth date
    cout << "Now enter the manager's date of birth.\n";
@@ -50,15 +54,16 @@ int main()
    cin >> manager.birthDate.year;
    cin.ignore();  // Skip the remaining newline character
    
-   // Get the manager's residence information
+   // Get the manager's residence information using istream
+   // getline
    cout << "Enter the manager's street address: ";
-   getline(cin, manager.residence.address);
+
    cout << "City: ";
-   getline(cin, manager.residence.city);
+
    cout << "State: ";
-   getline(cin, manager.residence.state);
+
    cout << "ZIP Code: ";
-   getline(cin, manager.residence.zip);
+
    
    // Display the information just entered
    cout << "\nHere is the manager's information:\n";
